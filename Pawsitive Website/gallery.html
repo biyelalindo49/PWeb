@@ -1,0 +1,185 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Gallery | Pawsitive Pet Academy</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Explore our gallery celebrating pets, animal care and learning at Pawsitive Pet Academy.">
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">
+      <img src="images/Logo.jpg.png" alt="Pawsitive Pet Academy Logo">
+    </a>
+
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open navigation menu" aria-expanded="false">
+      Menu
+    </button>
+
+    <nav id="navbar" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="founder.html">Founder</a>
+      <details class="nav-dropdown">
+        <summary>Courses</summary>
+        <div class="nav-dropdown-menu">
+          <a href="courses.html">All Courses</a>
+          <a href="individual-course.html">Course Details</a>
+          <a href="course-schedule.html">Schedule</a>
+          <a href="fees.html">Fees</a>
+        </div>
+      </details>
+      <a href="gallery.html" aria-current="page">Gallery</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="student-life.html">Student Life</a>
+      <a href="instructors.html">Instructors</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <h1>Our Gallery</h1>
+      <p>Celebrate the special bond between people and animals through moments of care, companionship and learning.</p>
+    </section>
+
+    <section class="section cream-section">
+      <div class="section-heading">
+        <h2>A World of Wagging Tails</h2>
+        <p>Explore moments inspired by pet care, animal wellbeing and the joy of spending time with our animal companions.</p>
+      </div>
+
+      <div class="gallery-filters" role="group" aria-label="Filter gallery">
+        <button class="gallery-filter btn" type="button" data-filter="all" aria-pressed="true">All Photos</button>
+        <button class="gallery-filter btn btn-outline" type="button" data-filter="pets" aria-pressed="false">Our Pets</button>
+        <button class="gallery-filter btn btn-outline" type="button" data-filter="care" aria-pressed="false">Pet Care</button>
+        <button class="gallery-filter btn btn-outline" type="button" data-filter="learning" aria-pressed="false">Learning</button>
+        <button class="gallery-filter btn btn-outline" type="button" data-filter="wellbeing" aria-pressed="false">Animal Wellbeing</button>
+      </div>
+
+      <div class="gallery-grid" aria-label="Photo gallery">
+      <article class="gallery-item" data-category="pets">
+        <img
+          src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=900&q=80"
+          alt="Golden retriever sitting outdoors"
+          loading="lazy"
+        >
+        <div>
+          <span class="gallery-category">Our Pets</span>
+          <h3>Happy Companions</h3>
+          <p>Celebrating the friendship and happiness pets bring into our lives.</p>
+        </div>
+      </article>
+
+      <article class="gallery-item" data-category="care">
+        <img
+          src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=900&q=80"
+          alt="Dog enjoying attentive care"
+          loading="lazy"
+        >
+        <div>
+          <span class="gallery-category">Pet Care</span>
+          <h3>Everyday Care</h3>
+          <p>Good care begins with patience, attention and understanding.</p>
+        </div>
+      </article>
+
+      <article class="gallery-item" data-category="learning">
+        <img
+          src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=900&q=80"
+          alt="Two dogs spending time together outside"
+          loading="lazy"
+        >
+        <div>
+          <span class="gallery-category">Learning</span>
+          <h3>Learning Through Animals</h3>
+          <p>Discovering animal behaviour and the importance of responsible care.</p>
+        </div>
+      </article>
+
+      <article class="gallery-item" data-category="wellbeing">
+        <img
+          src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=900&q=80"
+          alt="Close-up portrait of a friendly dog"
+          loading="lazy"
+        >
+        <div>
+          <span class="gallery-category">Animal Wellbeing</span>
+          <h3>Healthy and Happy</h3>
+          <p>Every animal deserves kindness, comfort and thoughtful attention.</p>
+        </div>
+      </article>
+
+      <article class="gallery-item" data-category="pets">
+        <img
+          src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=900&q=80"
+          alt="Cat looking towards the camera"
+          loading="lazy"
+        >
+        <div>
+          <span class="gallery-category">Our Pets</span>
+          <h3>Curious Cats</h3>
+          <p>Appreciating the unique personalities of our feline friends.</p>
+        </div>
+      </article>
+
+      <article class="gallery-item" data-category="care">
+        <img
+          src="https://images.unsplash.com/photo-1601758123927-196e5f3c2f5a?auto=format&fit=crop&w=900&q=80"
+          alt="Person spending time with a dog"
+          loading="lazy"
+        >
+        <div>
+          <span class="gallery-category">Pet Care</span>
+          <h3>Building Trust</h3>
+          <p>Gentle interactions help strengthen the bond between people and pets.</p>
+        </div>
+      </article>
+      </div>
+
+      <p class="gallery-note">
+        These are sample online images, not verified photographs of academy students, staff or activities.
+      </p>
+    </section>
+
+    <section class="section blue-section">
+      <div class="section-heading">
+        <h2>Want to Learn More?</h2>
+        <p>Explore our courses or contact us with questions about learning opportunities at the academy.</p>
+        <a class="btn" href="courses.html">Explore Our Courses</a>
+        <a class="btn btn-outline" href="contact.html">Contact Us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="images/Logo.jpg.png" alt="Pawsitive Pet Academy Logo">
+        <p>Helping people build better relationships with pets.</p>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="student-life.html">Student Life</a></li>
+          <li><a href="instructors.html">Instructors</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="copyright">
+      &copy; <span id="year"></span> Pawsitive Pet Academy. All rights reserved.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+```

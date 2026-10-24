@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Pawsitive Pet Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">
+        <img src="images/Logo.jpg.png" alt="Pawsitive Pet Academy Logo">
+    </a>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <nav id="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="founder.html">Founder</a>
+        <details class="nav-dropdown">
+            <summary>Courses</summary>
+            <div class="nav-dropdown-menu">
+                <a href="courses.html">All Courses</a>
+                <a href="individual-course.html">Course Details</a>
+                <a href="course-schedule.html">Schedule</a>
+                <a href="fees.html">Fees</a>
+            </div>
+        </details>
+        <a href="gallery.html">Gallery</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="student-life.html">Student Life</a>
+        <a href="instructors.html">Instructors</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-text">
+            <p class="tagline">WELCOME TO PAWSITIVE PET ACADEMY</p>
+
+            <h1>Training & Care for Happy Pets</h1>
+
+            <p>
+                Learn practical pet-care skills and build a stronger
+                relationship with your pets through professional
+                guidance and positive training.
+            </p>
+
+            <a href="courses.html" class="btn">Explore Courses</a>
+            <a href="about.html" class="btn btn-outline">Learn More</a>
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=1000&q=85"
+                alt="Happy golden retriever">
+        </div>
+    </section>
+
+    <section class="section blue-section">
+        <div class="section-heading">
+            <p class="tagline">WHY CHOOSE US?</p>
+            <h2>Why Pet Owners Trust Pawsitive</h2>
+            <p>Helping pets and people learn, grow and thrive together.</p>
+        </div>
+
+        <div class="cards">
+            <article class="card">
+                <h3>Qualified Guidance</h3>
+                <p>Learn with supportive instructors who value animal care.</p>
+            </article>
+
+            <article class="card">
+                <h3>Hands-on Learning</h3>
+                <p>Develop useful skills through practical learning activities.</p>
+            </article>
+
+            <article class="card">
+                <h3>Quality Education</h3>
+                <p>Build your knowledge of responsible pet ownership.</p>
+            </article>
+
+            <article class="card">
+                <h3>Positive Care</h3>
+                <p>Discover positive approaches to training and pet wellbeing.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-heading">
+            <p class="tagline">OUR COURSES</p>
+            <h2>Our Most Popular Courses</h2>
+        </div>
+
+        <div class="cards">
+            <article class="card course-card">
+                <img src="https://images.unsplash.com/photo-1551717743-49959800b1f6?auto=format&fit=crop&w=700&q=80"
+                     alt="Dog training">
+                <h3>Canine Obedience Training</h3>
+                <p>Learn basic commands and positive training techniques.</p>
+                <a href="individual-course.html" class="btn">View Course</a>
+            </article>
+
+            <article class="card course-card">
+                <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=700&q=80"
+                     alt="Pet care">
+                <h3>Pet Care Essentials</h3>
+                <p>Understand everyday care, hygiene and safe handling.</p>
+                <a href="courses.html" class="btn">View Course</a>
+            </article>
+
+            <article class="card course-card">
+                <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=700&q=80"
+                     alt="Dog enjoying outdoor time">
+                <h3>Professional Pet Care</h3>
+                <p>Explore learning opportunities in the pet-care industry.</p>
+                <a href="courses.html" class="btn">View Course</a>
+            </article>
+        </div>
+    </section>
+
+    <section class="section cream-section">
+        <div class="section-heading">
+            <h2>Ready to Start Your Journey?</h2>
+            <p>Take the first step towards learning more about pet care.</p>
+            <a href="student-registration.html" class="btn">Register Now</a>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div>
+            <img src="images/Logo.jpg.png" alt="Pawsitive Pet Academy Logo">
+            <p>Learning with compassion. Caring with confidence.</p>
+        </div>
+
+        <div>
+            <h3>Quick Links</h3>
+            <a href="about.html">About Us</a>
+            <a href="courses.html">Our Courses</a>
+            <a href="fees.html">Course Fees</a>
+        </div>
+
+        <div>
+            <h3>Contact</h3>
+            <p>Durban, South Africa</p>
+            <a href="contact.html">Contact Our Team</a>
+        </div>
+    </div>
+
+    <p class="copyright">
+        &copy; <span id="year"></span> Pawsitive Pet Academy
+    </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

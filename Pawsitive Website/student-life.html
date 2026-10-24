@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Life | Pawsitive Pet Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="images/Logo.jpg.png" alt="Pawsitive Pet Academy Logo">
+        </a>
+
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+        <nav id="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="founder.html">Founder</a>
+            <details class="nav-dropdown">
+                <summary>Courses</summary>
+                <div class="nav-dropdown-menu">
+                    <a href="courses.html">All Courses</a>
+                    <a href="individual-course.html">Course Details</a>
+                    <a href="course-schedule.html">Schedule</a>
+                    <a href="fees.html">Fees</a>
+                </div>
+            </details>
+            <a href="gallery.html">Gallery</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="student-life.html" aria-current="page">Student Life</a>
+            <a href="instructors.html">Instructors</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <h1>Student Life</h1>
+        <p>Learn, practise and grow your passion for animal care.</p>
+    </section>
+
+    <section class="section">
+        <div class="about-container">
+
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1000&q=85" alt="Students learning together">
+            </div>
+
+            <div class="about-text">
+                <h2>Welcome to Student Life</h2>
+                <p>
+                    At Pawsitive Pet Academy, student life is about more than
+                    learning from books. Students develop knowledge, practical
+                    skills and an understanding of how to care for animals.
+                </p>
+                <p>
+                    Our learning environment encourages responsibility,
+                    patience, teamwork and kindness towards pets.
+                </p>
+                <p>
+                    Through our pet-care programmes and practical courses,
+                    students can build confidence and develop skills that may
+                    help them pursue opportunities in the pet-care industry.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section cream-section">
+        <div class="section-heading">
+            <h2>What Students Experience</h2>
+            <p>Our learning approach combines knowledge with practical activities.</p>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=700&q=80" alt="Dog receiving gentle care">
+                <h3>Classroom Learning</h3>
+                <p>
+                    Students learn about animal behaviour, responsible pet
+                    ownership, health and general animal welfare.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1551717743-49959800b1f6?auto=format&fit=crop&w=700&q=80" alt="Dog training activity">
+                <h3>Practical Activities</h3>
+                <p>
+                    Practical learning helps students understand pet-care
+                    routines and apply their knowledge.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=700&q=80" alt="Dogs playing together">
+                <h3>Teamwork</h3>
+                <p>
+                    Students are encouraged to share ideas, support one
+                    another and develop communication skills.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section blue-section">
+        <div class="section-heading">
+            <h2>Skills for the Future</h2>
+            <p>
+                We encourage students to develop patience, confidence,
+                responsibility and compassion. These qualities are important
+                when working with animals and their owners.
+            </p>
+            <a href="courses.html" class="btn">View Our Courses</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-heading">
+            <h2>Start Your Journey With Us</h2>
+            <p>
+                Are you passionate about animals and interested in learning
+                more about their care? Explore our courses or contact us
+                to find out how to get started.
+            </p>
+            <a href="student-registration.html" class="btn">Register Now</a>
+            <a href="contact.html" class="btn">Contact Us</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <img src="images/Logo.jpg.png" alt="Pawsitive Pet Academy Logo" width="100">
+                <p>Helping people build better relationships with pets.</p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="student-life.html">Student Life</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+
+        <p class="copyright">
+            &copy; <span id="year"></span> Pawsitive Pet Academy. All rights reserved.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

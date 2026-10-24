@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Pawsitive Pet Academy in Durban for information about courses, schedules and fees.">
+    <title>Contact Us | Pawsitive Pet Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="images/Logo.jpg.png" alt="Pawsitive Pet Academy Logo">
+        </a>
+
+        <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open navigation menu" aria-expanded="false">
+            Menu
+        </button>
+
+        <nav id="navbar" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="founder.html">Founder</a>
+            <details class="nav-dropdown">
+                <summary>Courses</summary>
+                <div class="nav-dropdown-menu">
+                    <a href="courses.html">All Courses</a>
+                    <a href="individual-course.html">Course Details</a>
+                    <a href="course-schedule.html">Schedule</a>
+                    <a href="fees.html">Fees</a>
+                </div>
+            </details>
+            <a href="gallery.html">Gallery</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="student-life.html">Student Life</a>
+            <a href="instructors.html">Instructors</a>
+            <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-banner">
+            <h1>Contact Us</h1>
+            <p>Get information about courses, schedules and fees at Pawsitive Pet Academy.</p>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <h2>How Can We Help?</h2>
+                <p>
+                    Explore the information below to plan your learning journey.
+                    The academy is based in Durban, South Africa.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Contact Details</h2>
+                    <div class="contact-detail">
+                        <strong>Address</strong><br>
+                        <address>
+                            2 Lumsden Cres<br>
+                            Morningside, Durban, 4001<br>
+                            South Africa
+                        </address>
+                    </div>
+                    <p>
+                        <strong>Email</strong><br>
+                        <a href="mailto:PawsitiveAcademy@gmail.com">PawsitiveAcademy@gmail.com</a>
+                    </p>
+                    <p>
+                        <strong>Phone</strong><br>
+                        <a href="tel:+27823213648">082 321 3648</a>
+                    </p>
+                    <p>
+                        For confirmed course availability, dates, fees and
+                        registration requirements, please review the relevant
+                        page or use the registration interest form.
+                    </p>
+                    <a href="student-registration.html" class="btn">Register Your Interest</a>
+                </div>
+
+                <div class="cards contact-options">
+                    <article class="card">
+                        <h3>Course Information</h3>
+                        <p>Compare our learning options and find a course that suits your interests.</p>
+                        <a href="courses.html" class="btn">Explore Courses</a>
+                    </article>
+
+                    <article class="card">
+                        <h3>Dates and Fees</h3>
+                        <p>Check course schedules and fee information before registering.</p>
+                        <a href="course-schedule.html" class="btn">View Schedule</a>
+                        <a href="fees.html" class="btn btn-outline">View Fees</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section cream-section">
+            <div class="section-heading">
+                <h2>Ready to Get Started?</h2>
+                <p>
+                    Tell us which course you are interested in using the
+                    registration interest form. It is a demonstration form
+                    and does not send information to the academy yet.
+                </p>
+                <a href="student-registration.html" class="btn">Go to Registration</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/Logo.jpg.png" alt="Pawsitive Pet Academy Logo">
+                <p>Helping people build better relationships with pets.</p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="course-schedule.html">Schedule</a></li>
+                    <li><a href="fees.html">Fees</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="copyright">
+            &copy; <span id="year"></span> Pawsitive Pet Academy. All rights reserved.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

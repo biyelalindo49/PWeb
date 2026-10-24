@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Schedule | Pawsitive Pet Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="images/Logo.jpg.png" alt="Pawsitive Pet Academy Logo">
+        </a>
+
+        <button class="menu-toggle"
+                onclick="toggleMenu()"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <nav id="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="founder.html">Founder</a>
+            <details class="nav-dropdown">
+                <summary>Courses</summary>
+                <div class="nav-dropdown-menu">
+                    <a href="courses.html">All Courses</a>
+                    <a href="individual-course.html">Course Details</a>
+                    <a href="course-schedule.html">Schedule</a>
+                    <a href="fees.html">Fees</a>
+                </div>
+            </details>
+            <a href="gallery.html">Gallery</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="student-life.html">Student Life</a>
+            <a href="instructors.html">Instructors</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <h1>Course Schedule</h1>
+        <p>Plan your learning journey with Pawsitive Pet Academy.</p>
+    </section>
+
+    <section class="section">
+        <div class="section-heading">
+            <h2>Training Schedule</h2>
+            <p>
+                Explore our course durations and typical learning activities.
+                Contact us to confirm actual start dates and class times.
+            </p>
+        </div>
+
+        <div class="table-container">
+            <table class="schedule-table">
+                <caption>Course durations, learning focus and schedule enquiries</caption>
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Duration</th>
+                        <th>Learning Focus</th>
+                        <th>Schedule</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Professional Pet-Care Programme</td>
+                        <td>6 Months</td>
+                        <td>Pet care and animal welfare</td>
+                        <td>Contact us</td>
+                    </tr>
+
+                    <tr>
+                        <td>Practical Skills Course</td>
+                        <td>6 Weeks</td>
+                        <td>Practical pet-care skills</td>
+                        <td>Contact us</td>
+                    </tr>
+
+                    <tr>
+                        <td>Pet Care and Grooming</td>
+                        <td>To be confirmed</td>
+                        <td>Grooming and everyday care</td>
+                        <td>Contact us</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section-heading">
+            <a href="contact.html" class="btn">Enquire About Dates</a>
+            <a href="student-registration.html" class="btn">Register Now</a>
+        </div>
+    </section>
+
+    <section class="section cream-section">
+        <div class="section-heading">
+            <h2>What to Expect</h2>
+            <p>
+                Our courses are designed to develop knowledge, responsibility
+                and practical understanding of caring for animals.
+            </p>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Learning Sessions</h3>
+                <p>
+                    Build your understanding of pet care, animal needs
+                    and responsible ownership.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Practical Activities</h3>
+                <p>
+                    Develop practical knowledge related to everyday
+                    animal care and welfare.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Course Guidance</h3>
+                <p>
+                    Contact the academy for confirmed dates, class times,
+                    fees and registration requirements.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <img src="images/Logo.jpg.png"
+                     alt="Pawsitive Pet Academy Logo"
+                     width="100">
+                <p>Helping people build better relationships with pets.</p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="course-schedule.html">Schedule</a>
+                <a href="fees.html">Fees</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+
+        <p class="copyright">
+            &copy; <span id="year"></span>
+            Pawsitive Pet Academy. All rights reserved.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

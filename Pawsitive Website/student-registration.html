@@ -1,0 +1,258 @@
+\<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration | Pawsitive Pet Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="images/Logo.jpg.png" alt="Pawsitive Pet Academy Logo">
+        </a>
+
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+        <nav id="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="founder.html">Founder</a>
+            <details class="nav-dropdown">
+                <summary>Courses</summary>
+                <div class="nav-dropdown-menu">
+                    <a href="courses.html">All Courses</a>
+                    <a href="individual-course.html">Course Details</a>
+                    <a href="course-schedule.html">Schedule</a>
+                    <a href="fees.html">Fees</a>
+                </div>
+            </details>
+            <a href="gallery.html">Gallery</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="student-life.html">Student Life</a>
+            <a href="instructors.html">Instructors</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <h1>Student Registration</h1>
+        <p>Take the first step towards learning more about pet care.</p>
+    </section>
+
+    <section class="section registration-section">
+        <div class="section-heading">
+            <h2>Register With Pawsitive Pet Academy</h2>
+            <p>
+                Complete the form below to express your interest in one of our
+                courses. Our team can then contact you about the next steps.
+            </p>
+        </div>
+
+        <div class="registration-container">
+
+            <form id="registration-form" novalidate>
+
+                <h3>Personal Information</h3>
+
+                <div class="registration-form-grid">
+
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input
+                            type="text"
+                            id="first-name"
+                            name="firstName"
+                            placeholder="Enter your first name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input
+                            type="text"
+                            id="last-name"
+                            name="lastName"
+                            placeholder="Enter your last name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter your phone number"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="birth-date">Date of Birth</label>
+                        <input
+                            type="date"
+                            id="birth-date"
+                            name="birthDate"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="city">City or Town</label>
+                        <input
+                            type="text"
+                            id="city"
+                            name="city"
+                            placeholder="Enter your city or town"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <h3>Course Information</h3>
+
+                <div class="form-group">
+                    <label for="course">Choose a Course</label>
+                    <select id="course" name="course" required>
+                        <option value="">Select a course</option>
+                        <option value="professional-programme">
+                            Professional Programme - 6 Months
+                        </option>
+                        <option value="practical-skills">
+                            Practical Skills Course - 6 Weeks
+                        </option>
+                        <option value="general-enquiry">
+                            I Need More Information
+                        </option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="start-date">Preferred Start Date</label>
+                    <input
+                        type="date"
+                        id="start-date"
+                        name="startDate"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="experience">Previous Pet-Care Experience</label>
+                    <select id="experience" name="experience" required>
+                        <option value="">Select an option</option>
+                        <option value="none">No previous experience</option>
+                        <option value="pet-owner">Experience as a pet owner</option>
+                        <option value="some">Some practical experience</option>
+                        <option value="professional">Professional experience</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="reason">Why would you like to join us?</label>
+                    <textarea
+                        id="reason"
+                        name="reason"
+                        rows="5"
+                        placeholder="Tell us about your interests and goals..."
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="registration-checkbox">
+                    <input
+                        type="checkbox"
+                        id="confirm"
+                        name="confirm"
+                        required
+                    >
+                    <label for="confirm">
+                        I confirm that the information I have provided is correct.
+                    </label>
+                </div>
+
+                <button type="submit" class="btn">Submit Registration</button>
+
+                <p id="registration-message" role="alert" aria-live="assertive" hidden></p>
+
+            </form>
+
+        </div>
+    </section>
+
+    <section class="section cream-section">
+        <div class="section-heading">
+            <h2>What Happens Next?</h2>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>1. Complete the Form</h3>
+                <p>
+                    Provide your details and select the course you are interested in.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>2. Confirmation</h3>
+                <p>
+                    The academy can review your enquiry and contact you about
+                    registration requirements.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>3. Prepare to Learn</h3>
+                <p>
+                    Ask about course dates, fees and what you need before your
+                    training begins.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <img src="images/Logo.jpg.png" alt="Pawsitive Pet Academy Logo" width="100">
+                <p>Helping people build better relationships with pets.</p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="fees.html">Fees</a>
+                <a href="student-life.html">Student Life</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+
+        <p class="copyright">
+            &copy; <span id="year"></span> Pawsitive Pet Academy. All rights reserved.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Courses | Pawsitive Pet Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="images/Logo.jpg.png" alt="Pawsitive Pet Academy Logo">
+                <span class="brand-name">Pawsitive Pet Academy</span>
+            </a>
+
+            <button class="menu-toggle" onclick="toggleMenu()" aria-expanded="false">
+                Menu
+            </button>
+
+            <nav id="navbar">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="founder.html">Founder</a>
+                <details class="nav-dropdown">
+                    <summary>Courses</summary>
+                    <div class="nav-dropdown-menu">
+                        <a href="courses.html">All Courses</a>
+                        <a href="individual-course.html">Course Details</a>
+                        <a href="course-schedule.html">Schedule</a>
+                        <a href="fees.html">Fees</a>
+                    </div>
+                </details>
+                <a href="gallery.html">Gallery</a>
+                <a href="testimonials.html">Testimonials</a>
+                <a href="student-life.html">Student Life</a>
+                <a href="instructors.html">Instructors</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>Our Courses</h1>
+            <p>Discover learning opportunities designed for pet lovers and future pet-care professionals.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Explore Our Programmes</h2>
+                <p>Develop your knowledge and practical skills in animal care.</p>
+            </div>
+
+            <div class="cards">
+
+                <div class="card">
+                    <img src="images/Professional Pet.jpg.jpg" alt="Professional pet care">
+                    <h3>Professional Pet Care Programme</h3>
+                    <p>Learn essential pet-care knowledge, animal handling, responsible ownership and professional care practices.</p>
+                    <p><strong>Duration:</strong> 6 months</p>
+                    <a href="individual-course.html" class="btn">View Course</a>
+                </div>
+
+                <div class="card">
+                    <img src="images/Pet skills.jpg" alt="Practical pet care training">
+                    <h3>Practical Pet-Care Skills</h3>
+                    <p>Build practical skills in handling, grooming basics, feeding routines and everyday animal care.</p>
+                    <p><strong>Duration:</strong> 6 weeks</p>
+                    <a href="individual-course.html" class="btn">View Course</a>
+                </div>
+
+                <div class="card">
+                    <img src="images/Dog care.jpg" alt="Dog care and handling">
+                    <h3>Dog Care and Handling</h3>
+                    <p>Understand dog behaviour, safe handling, hygiene, exercise and the importance of responsible care.</p>
+                    <p><strong>Duration:</strong> Contact us for details</p>
+                    <a href="contact.html" class="btn">Enquire Now</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container highlight-box">
+            <h2>Ready to Start Learning?</h2>
+            <p>Contact us to find out more about course availability, registration and fees.</p>
+            <a href="student-registration.html" class="btn">Register Now</a>
+            <a href="course-schedule.html" class="btn">View Schedule</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div>
+                <img src="images/Logo.jpg.png" alt="Pawsitive Pet Academy Logo" width="70">
+                <h3>Pawsitive Pet Academy</h3>
+                <p>Helping people develop the knowledge and skills to care for pets responsibly.</p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html">Our Courses</a></li>
+                    <li><a href="fees.html">Course Fees</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+                <p>Durban, South Africa</p>
+                <p>Contact us for course enquiries.</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Pawsitive Pet Academy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
